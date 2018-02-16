@@ -12,6 +12,9 @@
 		224156BD2035BBC800335ED9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224156BB2035BBC800335ED9 /* MainMenu.xib */; };
 		224156C92035BBC800335ED9 /* RandomPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224156C82035BBC800335ED9 /* RandomPasswordTests.swift */; };
 		224156D42035BBC800335ED9 /* RandomPasswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224156D32035BBC800335ED9 /* RandomPasswordUITests.swift */; };
+		224156E32035BE8100335ED9 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224156E12035BE8100335ED9 /* MainWindowController.swift */; };
+		224156E42035BE8100335ED9 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224156E22035BE8100335ED9 /* MainWindowController.xib */; };
+		224156E620365AE800335ED9 /* GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224156E520365AE800335ED9 /* GeneratePassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		224156CF2035BBC800335ED9 /* RandomPasswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomPasswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		224156D32035BBC800335ED9 /* RandomPasswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPasswordUITests.swift; sourceTree = "<group>"; };
 		224156D52035BBC800335ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224156E12035BE8100335ED9 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		224156E22035BE8100335ED9 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		224156E520365AE800335ED9 /* GeneratePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 				224156BB2035BBC800335ED9 /* MainMenu.xib */,
 				224156BE2035BBC800335ED9 /* Info.plist */,
 				224156BF2035BBC800335ED9 /* RandomPassword.entitlements */,
+				224156E12035BE8100335ED9 /* MainWindowController.swift */,
+				224156E22035BE8100335ED9 /* MainWindowController.xib */,
+				224156E520365AE800335ED9 /* GeneratePassword.swift */,
 			);
 			path = RandomPassword;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224156BA2035BBC800335ED9 /* Assets.xcassets in Resources */,
+				224156E42035BE8100335ED9 /* MainWindowController.xib in Resources */,
 				224156BD2035BBC800335ED9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224156E32035BE8100335ED9 /* MainWindowController.swift in Sources */,
+				224156E620365AE800335ED9 /* GeneratePassword.swift in Sources */,
 				224156B82035BBC800335ED9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +428,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RandomPassword/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.cybershark.RandomPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -431,6 +444,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RandomPassword/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.cybershark.RandomPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
