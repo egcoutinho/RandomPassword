@@ -15,7 +15,7 @@ class MainWindowController: NSWindowController
     
     override var windowNibName: NSNib.Name?
     {
-        return NSNib.Name(rawValue: "MainWindowController")
+        return "MainWindowController"
     }
     
     override func windowDidLoad()
@@ -27,13 +27,10 @@ class MainWindowController: NSWindowController
     
     @IBAction func generatePassword(sender: AnyObject)
     {
-        let length = 8
+        let length = 12
         let password = generateRandomString(length: length)
         
         textField.stringValue = password
-        
-        // Tell the text field what to display
-        //textField.stringValue = "Hello!"
     }
     
 }
