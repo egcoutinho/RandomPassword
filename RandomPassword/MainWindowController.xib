@@ -18,14 +18,14 @@
         <window title="Password Generator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="409" height="175"/>
+            <rect key="contentRect" x="196" y="240" width="409" height="164"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="409" height="175"/>
+                <rect key="frame" x="0.0" y="0.0" width="409" height="164"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-zV-jbb">
-                        <rect key="frame" x="45" y="119" width="320" height="36"/>
+                        <rect key="frame" x="20" y="108" width="369" height="36"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Fi3-0I-cvf">
                             <font key="font" metaFont="system" size="26"/>
@@ -33,9 +33,8 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GhQ-x8-NKK">
-                        <rect key="frame" x="125" y="13" width="158" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GhQ-x8-NKK">
+                        <rect key="frame" x="126" y="13" width="158" height="32"/>
                         <buttonCell key="cell" type="push" title="Generate Password" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VRc-3h-uQk">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -45,7 +44,7 @@
                         </connections>
                     </button>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9le-i1-8DQ">
-                        <rect key="frame" x="43" y="72" width="324" height="24"/>
+                        <rect key="frame" x="43" y="61" width="324" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="5" maxValue="25" doubleValue="15.526315789473683" tickMarkPosition="above" numberOfTickMarks="20" allowsTickMarkValuesOnly="YES" sliderType="linear" id="KBN-Aa-91x"/>
                         <connections>
@@ -53,11 +52,15 @@
                         </connections>
                     </slider>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GhQ-x8-NKK" secondAttribute="bottom" constant="20" id="2yC-jS-zMh"/>
+                    <constraint firstItem="GhQ-x8-NKK" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="hkR-au-DQ8"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="167.5" y="114.5"/>
+            <point key="canvasLocation" x="167.5" y="109"/>
         </window>
     </objects>
 </document>
