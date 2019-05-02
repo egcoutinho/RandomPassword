@@ -12,7 +12,8 @@ class MainWindowController: NSWindowController
 {
 
     @IBOutlet private weak var textField: NSTextField!
-    @IBOutlet private weak var pwdLengthSlider: NSSlider!
+    
+    private var length: Int = 15
     
     override var windowNibName: NSNib.Name?
     {
@@ -31,6 +32,7 @@ class MainWindowController: NSWindowController
     
     @IBAction func onSlide(_ sender: NSSlider)
     {
+        length = Int(sender.intValue)
         updatePWD()
     }
     
@@ -41,8 +43,6 @@ class MainWindowController: NSWindowController
     
     private func updatePWD()
     {
-        let length = Int(pwdLengthSlider.intValue)
-        
         print("\(length)")
         let password = generateRandomString(length: length)
         

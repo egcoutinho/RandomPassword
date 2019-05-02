@@ -8,7 +8,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RandomPassword" customModuleProvider="target">
             <connections>
-                <outlet property="pwdLengthSlider" destination="9le-i1-8DQ" id="aLf-2F-T1a"/>
                 <outlet property="textField" destination="ASP-zV-jbb" id="bH3-HJ-m3J"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
